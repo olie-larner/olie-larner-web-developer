@@ -22,7 +22,7 @@ const Bio = (data) => {
             className={classNames(
               "font-playfair relative pb-11 text-7xl transition-all delay-300 duration-700",
               {
-                "opacity-0 top-8": !headerInView?.isIntersecting,
+                "opacity-0 top-14": !headerInView?.isIntersecting,
               },
               {
                 "opacity-100 top-0": headerInView?.isIntersecting,
@@ -37,7 +37,7 @@ const Bio = (data) => {
               className={classNames(
                 "w-full lg:w-3/5 font-playfair leading-10 italic text-xl relative transition-all delay-500 duration-700",
                 {
-                  "opacity-0 top-8": !headerInView?.isIntersecting,
+                  "opacity-0 top-14": !headerInView?.isIntersecting,
                 },
                 {
                   "opacity-100 top-0": headerInView?.isIntersecting,
@@ -55,9 +55,9 @@ const Bio = (data) => {
                 ref={bioImage}
                 key={key}
                 className={classNames(
-                  "rounded-full w-full pt-[100%] bg-cover overflow-hidden relative transition-all delay-300 duration-700",
+                  "rounded-full w-full pt-[100%] bg-cover overflow-hidden relative transition-all delay-1000 duration-700",
                   {
-                    "opacity-0 top-8": !bioImageInView?.isIntersecting,
+                    "opacity-0 top-24": !bioImageInView?.isIntersecting,
                   },
                   {
                     "opacity-100 top-0": bioImageInView?.isIntersecting,
