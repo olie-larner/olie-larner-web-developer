@@ -3,6 +3,9 @@ import { useIntersectionObserver } from "@uidotdev/usehooks";
 import classNames from "classnames";
 
 const Bio = (data) => {
+  const [headerVis, setHeaderVis] = useState(false);
+  const [bioImageVis, setBioImageVis] = useState(false);
+
   const [header, headerInView] = useIntersectionObserver({
     threshold: 0.6,
     root: null,
@@ -13,6 +16,15 @@ const Bio = (data) => {
   });
   const { bioData } = data;
 
+  useEffect(() => {
+    if (headerInView?.isIntersecting && !headerVis) {
+      setHeaderVis(true);
+    }
+    if (bioImageInView?.isIntersecting && !bioImageVis) {
+      setBioImageVis(true);
+    }
+  });
+
   return (
     <div className="w-full pt-32 pb-16 md:py-32">
       <div className="w-10/12 mx-auto flex flex-col lg:flex-row">
@@ -22,10 +34,10 @@ const Bio = (data) => {
             className={classNames(
               "font-playfair relative pb-11 text-7xl transition-all delay-300 duration-700",
               {
-                "opacity-0 top-14": !headerInView?.isIntersecting,
+                "opacity-0 top-14": !headerVis,
               },
               {
-                "opacity-100 top-0": headerInView?.isIntersecting,
+                "opacity-100 top-0": headerVis,
               }
             )}
           >
@@ -37,10 +49,10 @@ const Bio = (data) => {
               className={classNames(
                 "w-full lg:w-3/5 font-playfair leading-10 italic text-xl relative transition-all delay-500 duration-700",
                 {
-                  "opacity-0 top-14": !headerInView?.isIntersecting,
+                  "opacity-0 top-14": !headerVis,
                 },
                 {
-                  "opacity-100 top-0": headerInView?.isIntersecting,
+                  "opacity-100 top-0": headerVis,
                 }
               )}
               dangerouslySetInnerHTML={{ __html: bioData.about }}
@@ -57,10 +69,10 @@ const Bio = (data) => {
                 className={classNames(
                   "rounded-full w-full pt-[100%] bg-cover overflow-hidden relative transition-all delay-1000 duration-700",
                   {
-                    "opacity-0 top-24": !bioImageInView?.isIntersecting,
+                    "opacity-0 top-24": !bioImageVis,
                   },
                   {
-                    "opacity-100 top-0": bioImageInView?.isIntersecting,
+                    "opacity-100 top-0": bioImageVis,
                   }
                 )}
                 style={{
