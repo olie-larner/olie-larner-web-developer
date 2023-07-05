@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import Fade from "react-reveal/Fade";
 
 const ContactMe = () => {
   return (
     <div id="contact" className="w-full pb-32">
       <div className="w-10/12 mx-auto flex flex-col items-center">
-        <Fade bottom delay={500}>
+        <div>
           <h3 className="text-7xl font-playfair text-center">
             That's about it...
           </h3>
@@ -20,7 +19,7 @@ const ContactMe = () => {
           >
             info@olielarner.com
           </a>
-        </Fade>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useIntersectionObserver } from "@uidotdev/usehooks";
 import classNames from "classnames";
-import Fade from "react-reveal/Fade";
 
 const PreviousProjects = ({ previousProjects, isProjectsInView }) => {
   const [projName, setProjName] = useState(undefined);
@@ -45,7 +44,7 @@ const PreviousProjects = ({ previousProjects, isProjectsInView }) => {
       id="previous-projects"
     >
       <div className="w-10/12 mx-auto flex">
-        <Fade bottom delay={300}>
+        <div>
           <h3
             className={classNames(
               "text-7xl pb-16 font-playfair transition-transform duration-700 delay-200",
@@ -59,7 +58,7 @@ const PreviousProjects = ({ previousProjects, isProjectsInView }) => {
           >
             Previous Projects
           </h3>
-        </Fade>
+        </div>
       </div>
       {previousProjects.map((proj, key) => {
         const projNo = key;

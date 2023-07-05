@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import classNames from "classnames";
-import Fade from "react-reveal/Fade";
 
 const SkillsSection = (data) => {
   const [logoName, setLogoName] = useState(undefined);
@@ -18,7 +17,7 @@ const SkillsSection = (data) => {
               <div id="trigger" />
 
               <div className="w-full">
-                <Fade bottom delay={300}>
+                <div>
                   <h3
                     className={classNames(
                       "text-7xl pb-10 cursor-pointer text-gray-800 font-playfair transition-transform duration-700 delay-200"
@@ -26,8 +25,8 @@ const SkillsSection = (data) => {
                   >
                     {skill.skillSetTitle}
                   </h3>
-                </Fade>
-                <Fade bottom delay={1000} cascade>
+                </div>
+                <div>
                   <div className="flex flex-row flex-wrap w-full">
                     {skill.skillSetLogos &&
                       skill.skillSetLogos.map((icon, key) => {
@@ -70,7 +69,7 @@ const SkillsSection = (data) => {
                         );
                       })}
                   </div>
-                </Fade>
+                </div>
               </div>
             </div>
           </div>
