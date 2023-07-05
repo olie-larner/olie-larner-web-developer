@@ -4,7 +4,7 @@ import Menu from "../menu/Menu";
 
 const Header = ({ title, projectsInView }) => {
   const [isOpen, setOpen] = useState(false);
-  const [buttonColor, setButtonColor] = useState("#1f2937");
+  const [buttonColor, setButtonColor] = useState("#FFFFFF");
 
   useEffect(() => {
     if (isOpen) {
