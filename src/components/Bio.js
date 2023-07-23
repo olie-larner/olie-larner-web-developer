@@ -33,7 +33,7 @@ const Bio = (data) => {
 					<h2
 						ref={header}
 						className={classNames(
-							'font-playfair relative pb-11 text-7xl transition-all delay-300 duration-700',
+							'font-playfair relative pb-11 text-7xl text-gray-800 transition-all delay-300 duration-700',
 							{
 								'opacity-0 top-14': !headerVis,
 							},
@@ -48,7 +48,7 @@ const Bio = (data) => {
 					<div>
 						<div
 							className={classNames(
-								'w-full lg:w-3/5 font-playfair leading-10 italic text-xl relative transition-all delay-500 duration-700',
+								'w-full lg:w-3/5 font-playfair leading-10 italic text-xl text-gray-800 relative transition-all delay-500 duration-700',
 								{
 									'opacity-0 top-14': !headerVis,
 								},
@@ -68,7 +68,7 @@ const Bio = (data) => {
 								ref={bioImage}
 								key={key}
 								className={classNames(
-									'rounded-full w-full pt-[100%] bg-cover overflow-hidden relative transition-all md:delay-700 duration-700 ease-in-out',
+									'rounded-full w-full pt-[100%] bg-cover overflow-hidden relative transition-all delay-500 duration-700 ease-in-out',
 									{
 										'opacity-0 top-24': !bioImageVis,
 									},
