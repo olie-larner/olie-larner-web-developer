@@ -33,7 +33,7 @@ const Menu = ({ isOpen, isMenuOpen }) => {
 				</li>
 				<li>
 					<a
-						className="text-3xl md:text-5xl leading-3 md:leading-[70px]"
+						className="text-3xl md:text-5xl leading-9 md:leading-[70px]"
 						href="#previous-projects"
 						onClick={onLinkSelect}
 					>
