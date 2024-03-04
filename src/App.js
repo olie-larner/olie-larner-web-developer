@@ -22,7 +22,8 @@ function App() {
 						rel="stylesheet"
 					/>
 					<title>
-						Freelance Web Developer | Front-end & Back-end | Responsive Design
+						Olie Larner - Freelance Web Developer | Front-end & Back-end |
+						Responsive Design
 					</title>
 					<meta
 						name="description"
