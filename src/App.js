@@ -27,8 +27,8 @@ function App() {
 					</title>
 					<meta
 						name="description"
-						content="Hi, I'm Olie Larnwer, a skilled freelance web developer
-						specializing in both front-end and back-end development. With 8
+						content="Hi, I'm Olie Larner, a skilled freelance web developer
+						specializing in both front-end and back-end development. With 10
 						years of experience, I have a strong foundation in HTML, CSS,
 						JavaScript, and PHP, along with expertise in responsive design and
 						modern web development frameworks. I am passionate about creating
