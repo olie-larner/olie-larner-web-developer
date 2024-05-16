@@ -15,6 +15,7 @@
 		"hamburger-react": "^2.5.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-ga4": "^2.1.0",
 		"react-helmet": "^6.1.0",
 		"react-hook-inview": "^4.5.0",
 		"react-player": "^2.12.0",
